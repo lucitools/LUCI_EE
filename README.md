@@ -15,4 +15,4 @@ This tool should be run when the toolbox is first loaded into ArcMap. This tool 
 
 ## Sample data and tutorial
 
-The sample data and tutorial for running these tools are available through this link [https://lucitools.org/luci-tutorials/running-luci-entex-v1-0](this link).
+The sample data and tutorial for running these tools are available through [this link](https://lucitools.org/luci-tutorials/running-luci-entex-v1-0).
