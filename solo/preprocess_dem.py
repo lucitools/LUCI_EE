@@ -1,15 +1,11 @@
 '''
-Preprocessing tool for LUCI. Generates hydrographical and topographical files
-for use in other LUCI functions.
+Preprocessing tool for LUCI_EE. Generates hydrological and topographical files
+for use in other LUCI_EE functions.
 '''
 import arcpy
-from arcpy.sa import Con, Int, IsNull, Reclassify, RemapRange, RemapValue, Raster, Fill, Float, Hillshade, BooleanXOr
-from arcpy.sa import FlowAccumulation, FlowDirection, ApplyEnvironment, Sink, SnapPourPoint, SetNull, StreamOrder, Slope
+from arcpy.sa import Int, Reclassify, RemapRange, RemapValue, Raster, Fill, Float
+from arcpy.sa import FlowAccumulation, FlowDirection, StreamOrder
 import os
-import traceback
-import stat
-import math
-import configuration
 
 import LUCI_EE.lib.progress as progress
 import LUCI_EE.lib.log as log

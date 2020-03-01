@@ -1,17 +1,11 @@
 '''
-t_baseline.py generates the hydrological and topographical models, and the land use/soil scenario information
-which are used as input to LUCI functions.
-
-Multiple Arc tools use this script with different numbers of input parameters.
-These different versions are specified by the "Tool level" parameter, which can have the values
-"core" and "rav".
+t_preprocess_dem.py preprocesses the user-provided DEM and stream network to reconcile inconsistencies
+between these inputs and produce files that will be used by the other tools in this toolbox
 '''
 
 import arcpy
 import os
 import sys
-import traceback
-import configuration
 
 import LUCI_EE.lib.log as log
 import LUCI_EE.lib.progress as progress
