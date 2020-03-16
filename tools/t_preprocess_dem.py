@@ -152,9 +152,6 @@ def function(params):
 
             progress.logProgress(codeBlock, outputFolder)
 
-
-        ## TODO: Add a coverage check for the stream network and the buffered study area mask
-        
         # Buffer study area mask
         baseline.bufferMask(inputDEM, studyAreaMask, outputStudyAreaMaskBuff=studyAreaMaskBuff)
         log.info('Study area mask buffered')
@@ -165,8 +162,6 @@ def function(params):
 
         codeBlock = 'Clip inputs'
         if not progress.codeSuccessfullyRun(codeBlock, outputFolder, rerun):
-
-            ## TODO: Clip just the DEM and stream network
 
             baseline.clipInputs(outputFolder,
                                 studyAreaMaskBuff,
